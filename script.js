@@ -49,17 +49,19 @@ menuLinksList.forEach(function (el) {
 
 window.onscroll = function () {
     let c = content.getBoundingClientRect();
-    let cardsCoord = c.height + c.top - 160;
+    let cardsCoord =  Math.ceil(c.height + c.y - 160);
     let m = innerMenu.getBoundingClientRect();
-    let menuCoord = m.height + m.top;
+    let menuCoord = Math.ceil(230 + m.y);
 
-    if (cardsCoord <= menuCoord) {
+    console.log(cardsCoord, menuCoord);
+
+    if (cardsCoord < menuCoord) {
         menu.classList.add("closed");
         menu.classList.remove("open");
         if (document.body.clientWidth <= 1024) {
             menuButton.classList.remove("closed");
         }
-    } else {
+    } else if (cardsCoord > menuCoord) {
         menu.classList.remove("closed");
     }
 
