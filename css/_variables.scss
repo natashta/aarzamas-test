@@ -1,0 +1,113 @@
+$bg: #000;
+$bg-header: #FFF8EA;
+$bg-main: #F7F7F7;
+$bg-menu: #fff;
+
+$color-main-header: #15142C;
+$color-text-header: #1A1A1A;
+
+$color-text: #262626;
+$color-header: #000;
+$color-accent: #EA6263;
+$color-light: #999999;
+
+$social-border: 1px solid #E6E6E6;
+
+$font-main: 'Roboto Mono',
+Arial,
+sans-serif;
+$font-header: 'IBM Plex Mono',
+Arial,
+sans-serif;
+$font-minor: 'Formular',
+Arial,
+sans-serif;
+
+%ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+%head-header {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-main-header;
+}
+
+%head-sub {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 35px;
+    text-align: center;
+    color: $color-text-header;
+}
+
+%text-accent {
+    font-family: $font-minor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: $color-light;
+}
+
+%mob-text {
+    font-family: $font-header;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-text;
+}
+
+%mob-header {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-header;
+}
+
+%dt-text {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: $color-text;
+}
+
+%mob-button-text {
+    font-family: $font-minor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-text-header;
+}
